@@ -16,10 +16,6 @@ These will need to be downloaded and placed into 00 Dependencies when you run Se
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
 ```
 1. Run Menu.bat
 2. Run Setup.bat in the menu
