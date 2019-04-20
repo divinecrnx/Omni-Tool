@@ -36,6 +36,7 @@ IF EXIST Finish.txt (
 )
 
 IF NOT EXIST Finish.txt (
+	MKDIR "00 Dependencies"
 	MKDIR "01 Downloads"
 	MKDIR "02 Gifs"
 	MKDIR "03 Conversions"
