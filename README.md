@@ -13,11 +13,6 @@ These will need to be downloaded and placed into 00 Dependencies when you run Se
 1. youtube-dl
 2. ffmpeg
 ```
-In addition, you will need to download and install any dependencies they may need. It is recommended that you add them to your path. For now, they are:
-
-```
-1. Python
-```
 
 ### Installing
 
