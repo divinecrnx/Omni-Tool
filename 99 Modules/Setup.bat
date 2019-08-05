@@ -7,6 +7,7 @@ CLS
 CD ..
 COLOR 0A
 
+::Used to display the path to check if it's properly set up.
 IF EXIST debug.txt (
 	PATH
 	ECHO.

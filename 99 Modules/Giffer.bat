@@ -8,7 +8,6 @@ CD ..\02 Gifs
 ECHO Giffer Mainframe
 ECHO.
 ECHO Converts video files into high quality gifs!
-ECHO This is a work in progress, any feedback is appreciated
 ECHO.
 SET /p video= "Video File (extension needed): "
 SET /p gif= "Gif File (extension not needed.): "

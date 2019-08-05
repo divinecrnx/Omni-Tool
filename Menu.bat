@@ -2,30 +2,6 @@
 
 ::BAT file to be used with youtubedl for ease of use. By: Zulhilmi
 
-::THIS PROGRAM USES YOUTUBE-DL WHICH IN TURN USES PYTHON TO RUN, PLEASE INSTALL IT FIRST
-
-IF EXIST nopython.txt (
-	ECHO nopython.txt detected...
-	PAUSE
-	GOTO depencheck
-)
-
-:: This segment checks if python is installed
-
-WHERE python >NUL 2>NUL
-IF %ERRORLEVEL% NEQ 0 (
-	ECHO.
-	ECHO Python is not detected in PATH, please install it and add it to PATH.
-	ECHO Visit https://www.python.org/
-	ECHO.
-	PAUSE
-	EXIT
-)ELSE (
-	GOTO depencheck
-)
-
-:: End check segment
-
 :: Checks if the dependencies folder is added to System Path. If not, it adds it to the path variable temporarily
 
 :depencheck
@@ -54,9 +30,8 @@ ECHO 3) Converter
 ECHO 4) Combine
 ECHO 5) Update Youtube-DL
 ECHO 6) Setup.bat
-ECHO 7) WGET
-ECHO 8) Show file/folders
-ECHO 9) Exit
+ECHO 7) Show file/folders
+ECHO 8) Exit
 ECHO.
 
 IF NOT EXIST Finish.txt ( 
@@ -67,19 +42,13 @@ IF NOT EXIST Finish.txt (
 	ECHO.
 )
 
-CHOICE /C 123456789 /M "Your choice:"
+CHOICE /C 12345678 /M "Your choice:"
 
-IF ERRORLEVEL 9 EXIT
-
-IF ERRORLEVEL 8 (
-	CD %~dp0\99 Modules
-	CALL Direct.bat
-	GOTO start
-)
+IF ERRORLEVEL 8 EXIT
 
 IF ERRORLEVEL 7 (
 	CD %~dp0\99 Modules
-	CALL WGET.bat
+	CALL Direct.bat
 	GOTO start
 )
 
